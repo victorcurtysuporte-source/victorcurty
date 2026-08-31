@@ -1,0 +1,16 @@
+# Gerado pelo build.py (Netlify roda `python build.py`)
+/dist/
+
+# Originais e masters — não entram no deploy (build.py só copia assets/css|js|img|opt)
+/_originais/
+/assets/feedback harysson/
+/assets/*.jpeg
+/assets/*.jpg
+/assets/*.png
+
+# Sistema
+Thumbs.db
+.DS_Store
+
+# Tooling local do Claude Code
+/.claude/

@@ -1,0 +1,15 @@
+# Netlify — Dr. Victor Curty (site estático, sem dependências)
+#
+# Você edita a raiz do projeto. `python build.py` gera a pasta dist/, que é
+# o que vai para a Netlify. dist/ é descartável e refeita a cada build, então
+# não existe mais o risco de uma cópia manual ficar desatualizada.
+#
+# Deploy por arrastar: gere a dist/ e arraste em app.netlify.com/drop.
+#   Os headers e redirects vêm do netlify.toml que o build escreve dentro
+#   da própria dist/, porque é ele que a Netlify lê no deploy por arrastar.
+#
+# Deploy conectado ao Git: é este arquivo que vale, com o build abaixo.
+
+[build]
+  publish = "dist"
+  command = "python build.py"
