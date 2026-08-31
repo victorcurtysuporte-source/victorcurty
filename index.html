@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Analytics (ID em /assets/js/tracking.js) — só carrega após consentimento -->
+    <script src="/assets/js/tracking.js" defer></script>
+
+    <title>Dr. Victor Curty | Personal Trainer e Doutor em Fisiologia pela UFES</title>
+    <meta
+      name="description"
+      content="Victor Magalhães Curty, personal trainer e doutor em Fisiologia pela UFES. Consultoria online de treino para quem quer evoluir com método e a Mentoria Método RACI® para profissionais de Educação Física."
+    />
+    <link rel="canonical" href="https://victorcurtypersonal.com.br/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dr. Victor Curty" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Dr. Victor Curty | Personal Trainer e Doutor em Fisiologia pela UFES" />
+    <meta
+      property="og:description"
+      content="Duas frentes de trabalho: consultoria online de treino personalizado e a Mentoria Método RACI® para profissionais de Educação Física."
+    />
+    <meta property="og:image" content="https://victorcurtypersonal.com.br/assets/opt/og-home.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Dr. Victor Curty, personal trainer e doutor em Fisiologia" />
+    <meta property="og:url" content="https://victorcurtypersonal.com.br/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dr. Victor Curty | Personal Trainer e Doutor em Fisiologia pela UFES" />
+    <meta
+      name="twitter:description"
+      content="Duas frentes de trabalho: consultoria online de treino personalizado e a Mentoria Método RACI® para profissionais de Educação Física."
+    />
+    <meta name="twitter:image" content="https://victorcurtypersonal.com.br/assets/opt/og-home.jpg" />
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/assets/img/favicon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+    <meta name="theme-color" content="#080808" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css?v=35" />
+
+    <link rel="preload" as="image" fetchpriority="high"
+      href="/assets/opt/victor-mentor-720.webp"
+      imagesrcset="/assets/opt/victor-mentor-480.webp 480w, /assets/opt/victor-mentor-720.webp 720w"
+      imagesizes="(min-width: 900px) 40vw, 100vw" />
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+        }
+      }
+    </script>
+
+    <!-- GSAP: só a camada de polimento de scroll. SRI fixado na versão 3.12.5. -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://victorcurtypersonal.com.br/#site",
+            "url": "https://victorcurtypersonal.com.br/",
+            "name": "Dr. Victor Curty",
+            "inLanguage": "pt-BR",
+            "publisher": { "@id": "https://victorcurtypersonal.com.br/#victor" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://victorcurtypersonal.com.br/#victor",
+            "name": "Victor Magalhães Curty",
+            "url": "https://victorcurtypersonal.com.br/",
+            "image": "https://victorcurtypersonal.com.br/assets/opt/og-home.jpg",
+            "jobTitle": "Personal trainer, treinador e mentor",
+            "description": "Personal trainer formado em Educação Física desde 2009 e doutor em Fisiologia pela Universidade Federal do Espírito Santo (UFES) desde 2018.",
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Universidade Federal do Espírito Santo"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Serra",
+              "addressRegion": "ES",
+              "addressCountry": "BR"
+            },
+            "sameAs": ["https://www.instagram.com/victor.curty/"]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="/" class="wordmark" aria-label="Dr. Victor Curty, página inicial">
+          <svg class="ecg" viewBox="0 0 34 22" aria-hidden="true">
+            <path d="M1 11 H7 L9 11 L11 6 L13 16 L15 3 L17 15 L19 11 H33" />
+          </svg>
+          <span class="wordmark__text"><b>VICTOR</b><span>CURTY</span></span>
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="/consultoria/" class="nav__link">Consultoria</a>
+          <a href="/mentoria/" class="nav__link">Mentoria</a>
+        </nav>
+
+        <div class="header__actions">
+          <a href="#caminhos" class="btn header__cta">Por onde começar</a>
+          <button
+            class="burger"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu__nav" aria-label="Navegação mobile">
+        <a href="/consultoria/"><span class="idx">01</span> Consultoria</a>
+        <a href="/mentoria/"><span class="idx">02</span> Mentoria</a>
+        <a href="#caminhos" class="btn btn--block">Por onde começar</a>
+      </nav>
+    </div>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="top">
+        <div class="hero__bg" aria-hidden="true">
+          <canvas class="hero__canvas"></canvas>
+        </div>
+        <div class="container container--wide">
+          <div class="hero__grid">
+            <div class="hero__content">
+              <span class="eyebrow" data-hero style="--d: 0s">Treinamento &amp; Mentoria</span>
+              <h1 class="hero__title">
+                <span class="line"><span data-hero style="--d: 0.12s">Ciência, método e experiência</span></span>
+                <span class="line"><span data-hero style="--d: 0.22s">para <em>transformar</em> o próprio corpo,</span></span>
+                <span class="line"><span data-hero style="--d: 0.32s">ou a própria carreira na</span></span>
+                <span class="line"><span data-hero style="--d: 0.42s">musculação feminina.</span></span>
+              </h1>
+              <p class="hero__sub" data-hero style="--d: 0.56s">
+                Consultoria online de treinamento para quem busca resultados
+                reais. Mentoria Método RACI® para profissionais de Educação
+                Física que estão estruturando a carreira.
+              </p>
+
+              <div class="hero__actions" data-hero style="--d: 0.64s">
+                <a href="/consultoria/" class="btn btn--lg">Quero evoluir meu corpo</a>
+                <a href="/mentoria/" class="btn btn--ghost btn--lg"
+                  >Quero evoluir minha carreira</a
+                >
+              </div>
+
+              <ul class="hero__meta" data-hero style="--d: 0.72s">
+                <li>Doutor em Fisiologia pela UFES</li>
+                <li>20 anos de estudo e prática</li>
+                <li>Treinador e mentor</li>
+              </ul>
+            </div>
+
+            <div class="hero__media">
+              <div class="hero__photo">
+                <img
+                  src="/assets/opt/victor-mentor-720.webp"
+                  srcset="
+                    /assets/opt/victor-mentor-480.webp 480w,
+                    /assets/opt/victor-mentor-720.webp 720w
+                  "
+                  sizes="(min-width: 900px) 40vw, 100vw"
+                  alt="Dr. Victor Curty, doutor em Fisiologia, ao lado do livro de biomecânica da musculação para mulheres"
+                  width="960"
+                  height="1280"
+                  fetchpriority="high"
+                  decoding="async"
+                  style="object-position: 50% 12%"
+                />
+              </div>
+              <span class="hero__rule" aria-hidden="true"></span>
+              <div class="hero__stat">
+                <strong>20</strong>
+                <span>anos de estudo e prática</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">Role <span></span></div>
+      </section>
+
+      <!-- ============ BLOCO DE DIRECIONAMENTO ============ -->
+      <section class="section section--tight" id="caminhos">
+        <div class="container">
+          <div class="section-head center reveal">
+            <span class="eyebrow">Por onde começar</span>
+            <h2>Dois caminhos. Escolha o seu.</h2>
+            <p>Dois produtos distintos, para dois públicos distintos. Qual deles é você?</p>
+          </div>
+
+          <div class="paths">
+            <a class="path reveal" href="/consultoria/">
+              <span class="path__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 3v18h18" />
+                  <path d="M7 14l3.5-4 3 2L21 6" />
+                </svg>
+              </span>
+              <h3>Sou aluna(o) e quero resultados</h3>
+              <p>
+                Treino personalizado, acompanhamento próximo e evolução real.
+                Para quem busca ganho de massa muscular ou emagrecimento com
+                método e ciência.
+              </p>
+              <span class="path__cta">Conhecer a consultoria <span aria-hidden="true">→</span></span>
+            </a>
+
+            <a class="path reveal" data-delay="1" href="/mentoria/">
+              <span class="path__badge">Para quem quer se especializar</span>
+              <span class="path__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 5a2 2 0 0 1 2-2h9v16H6a2 2 0 0 0-2 2z" />
+                  <path d="M15 3h3a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2h-3" />
+                </svg>
+              </span>
+              <h3>Sou profissional e quero estruturar minha atuação</h3>
+              <p>
+                Para o profissional de Educação Física que quer se
+                especializar: 12 semanas para organizar avaliação, prescrição e
+                acompanhamento com o Método RACI®, e 1 ano de acesso ao
+                conteúdo online.
+              </p>
+              <span class="path__cta">Conhecer a mentoria <span aria-hidden="true">→</span></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ INSTAGRAM ============ -->
+      <section class="section section--light" id="instagram">
+        <div class="container">
+          <div class="ig-head reveal">
+            <span class="eyebrow">Instagram</span>
+            <h2>Ciência, resultados e bastidores, todos os dias.</h2>
+            <p>
+              No Instagram, o Dr. Victor compartilha conteúdo diário sobre
+              treino para mulheres: biomecânica aplicada, estratégias de
+              hipertrofia e emagrecimento, resultados reais de alunas e os
+              bastidores de quem vive o que ensina.
+            </p>
+
+            <a
+              href="https://www.instagram.com/victor.curty/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="ig-handle"
+            >
+              <svg class="ig-handle__glyph" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+              <span>@victor.curty</span>
+              <span class="ig-verified" title="Perfil verificado">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9.6 16.2 5.4 12l1.4-1.4 2.8 2.8 6-6L17 8.8z" />
+                </svg>
+              </span>
+            </a>
+
+            <ul class="ig-stats">
+              <li><strong>+14 mil</strong><span>seguidores</span></li>
+              <li><strong>1.500+</strong><span>publicações</span></li>
+              <li><strong>Diário</strong><span>conteúdo novo</span></li>
+            </ul>
+          </div>
+
+          <div class="ig-grid">
+            <a class="ig-tile reveal" href="https://www.instagram.com/victor.curty/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/assets/opt/victor-palestra-800.webp"
+                srcset="/assets/opt/victor-palestra-400.webp 400w, /assets/opt/victor-palestra-800.webp 800w"
+                sizes="(min-width: 900px) 20vw, 45vw"
+                alt="Dr. Victor Curty palestrando sobre treinamento"
+                width="1600" height="1066" loading="lazy" decoding="async"
+              />
+              <span class="ig-tile__tag">Autoridade</span>
+            </a>
+            <a class="ig-tile reveal" data-delay="1" href="https://www.instagram.com/victor.curty/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/assets/opt/victor-estudo-620.webp"
+                alt="Dr. Victor Curty estudando e produzindo conteúdo"
+                width="960" height="1280" loading="lazy" decoding="async"
+              />
+              <span class="ig-tile__tag">Ciência aplicada</span>
+            </a>
+            <a class="ig-tile reveal" data-delay="2" href="https://www.instagram.com/victor.curty/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/assets/opt/victor-personal-1280.webp"
+                srcset="/assets/opt/victor-personal-768.webp 768w, /assets/opt/victor-personal-1280.webp 1280w"
+                sizes="(min-width: 900px) 20vw, 45vw"
+                alt="Dr. Victor Curty acompanhando o treino de uma aluna"
+                width="1600" height="1066" loading="lazy" decoding="async"
+              />
+              <span class="ig-tile__tag">Treino na prática</span>
+            </a>
+            <a class="ig-tile reveal" data-delay="1" href="https://www.instagram.com/victor.curty/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/assets/opt/victor-mentor-720.webp"
+                srcset="/assets/opt/victor-mentor-480.webp 480w, /assets/opt/victor-mentor-720.webp 720w"
+                sizes="(min-width: 900px) 20vw, 45vw"
+                alt="Dr. Victor Curty como mentor de profissionais"
+                width="960" height="1280" loading="lazy" decoding="async"
+              />
+              <span class="ig-tile__tag">Mentoria</span>
+            </a>
+            <a class="ig-tile reveal" data-delay="2" href="https://www.instagram.com/victor.curty/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/assets/opt/victor-surf-400.webp"
+                alt="Dr. Victor Curty em um momento de surf"
+                width="601" height="822" loading="lazy" decoding="async"
+              />
+              <span class="ig-tile__tag">Rotina & atleta</span>
+            </a>
+          </div>
+
+          <div class="ig-cta reveal">
+            <a
+              href="https://www.instagram.com/victor.curty/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--lg"
+              >Seguir @victor.curty</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FECHAMENTO ============ -->
+      <section class="section section--graphite section--tight" id="decidir">
+        <div class="container">
+          <div class="section-head center reveal">
+            <span class="eyebrow">Antes de sair</span>
+            <h2>Os dois caminhos começam no mesmo lugar.</h2>
+            <p>
+              Método no lugar de improviso. O que muda é o que você quer
+              transformar: o próprio corpo, ou a própria carreira.
+            </p>
+          </div>
+
+          <div class="hero__actions reveal" style="justify-content: center">
+            <a href="/consultoria/" class="btn btn--lg">Quero evoluir meu corpo</a>
+            <a href="/mentoria/" class="btn btn--ghost btn--lg">Quero evoluir minha carreira</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="/" class="wordmark">
+              <svg class="ecg" viewBox="0 0 34 22" aria-hidden="true">
+                <path d="M1 11 H7 L9 11 L11 6 L13 16 L15 3 L17 15 L19 11 H33" />
+              </svg>
+              <span class="wordmark__text"><b>VICTOR</b><span>CURTY</span></span>
+            </a>
+            <p>
+              Victor Magalhães Curty, Personal trainer, treinador e mentor.
+              Doutor em Fisiologia pela UFES. Serra/ES.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h4>Navegação</h4>
+            <a href="/consultoria/">Consultoria</a>
+            <a href="/consultoria/#sobre">Sobre o Victor</a>
+            <a href="/mentoria/">Mentoria Método RACI®</a>
+            <a href="/mentoria/#aplicacao">Falar sobre a mentoria</a>
+          </div>
+          <div class="footer__col">
+            <h4>Contato</h4>
+            <a
+              href="https://www.instagram.com/victor.curty/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram @victor.curty</a
+            >
+            <a
+              href="https://wa.me/5527981437020?text=Ol%C3%A1%2C%20Dr.%20Victor!%20Quero%20saber%20mais%20sobre%20a%20consultoria%20online."
+              target="_blank"
+              rel="noopener noreferrer"
+              >Falar no WhatsApp</a
+            >
+            <a href="mailto:victorcurtysuporte@gmail.com">victorcurtysuporte@gmail.com</a>
+            <a href="/privacidade/">Política de privacidade</a>
+            <a href="/termos/">Termos de uso</a>
+          </div>
+        </div>
+
+        <p class="footer__disclaimer">
+          Os resultados podem variar de acordo com fatores individuais,
+          consistência, rotina e adesão ao processo.
+        </p>
+
+        <div class="footer__bottom">
+          <span>© 2026 Dr. Victor Curty. Todos os direitos reservados.</span>
+          <span>Serra/ES · Atendimento online · <button type="button" class="footer__cookie" data-open-consent>Cookies</button></span>
+          <a class="footer__credit" href="https://anamk.com" target="_blank" rel="noopener">Desenvolvido por <b>AnamK</b></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a
+      href="https://wa.me/5527981437020?text=Ol%C3%A1%2C%20Dr.%20Victor!%20Quero%20saber%20mais%20sobre%20a%20consultoria%20online."
+      class="wa-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Falar com o Dr. Victor no WhatsApp"
+    >
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path
+          d="M16 .396C7.164.396.001 7.56.001 16.393c0 2.885.755 5.7 2.19 8.185L0 32l7.616-2.13a15.9 15.9 0 0 0 8.377 2.243h.007C24.83 32.113 32 24.95 32 16.117 32 11.86 30.35 7.86 27.3 4.82 24.26 1.78 20.26.13 16 .396zm0 29.13h-.006a13.2 13.2 0 0 1-6.72-1.84l-.48-.286-4.52 1.265 1.207-4.41-.313-.454a13.16 13.16 0 0 1-2.02-7.02c0-7.29 5.93-13.22 13.23-13.22 3.53 0 6.85 1.38 9.35 3.88a13.13 13.13 0 0 1 3.87 9.35c-.003 7.29-5.93 13.22-13.22 13.22zm7.25-9.9c-.397-.2-2.35-1.16-2.714-1.29-.364-.133-.63-.2-.895.2-.264.396-1.026 1.29-1.258 1.556-.232.265-.463.298-.86.1-.397-.2-1.676-.618-3.193-1.97-1.18-1.052-1.977-2.35-2.21-2.747-.23-.397-.024-.612.174-.81.18-.178.397-.463.596-.695.2-.232.264-.397.397-.662.132-.265.066-.497-.033-.695-.1-.198-.895-2.157-1.226-2.952-.322-.775-.65-.67-.895-.683l-.762-.013c-.264 0-.694.1-1.058.497-.364.397-1.39 1.36-1.39 3.318 0 1.958 1.424 3.85 1.622 4.116.198.265 2.8 4.276 6.784 5.996.948.41 1.688.653 2.265.836.952.302 1.818.26 2.503.157.763-.114 2.35-.96 2.682-1.887.33-.926.33-1.72.23-1.886-.098-.166-.362-.265-.76-.463z"
+        />
+      </svg>
+    </a>
+
+    <script src="/assets/js/main.js?v=33" defer></script>
+    <script type="module" src="/assets/js/app.js?v=33"></script>
+  </body>
+</html>

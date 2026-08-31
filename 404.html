@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página não encontrada | Dr. Victor Curty</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/assets/img/favicon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+    <meta name="theme-color" content="#080808" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css?v=35" />
+    <style>
+      .nf {
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 2rem;
+        background: var(--black);
+      }
+      .nf__code {
+        font-family: var(--font-head);
+        font-weight: 700;
+        font-size: clamp(5rem, 22vw, 12rem);
+        line-height: 0.9;
+        letter-spacing: -0.04em;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(244, 243, 239, 0.16);
+      }
+      .nf h1 {
+        font-family: var(--font-head);
+        font-size: clamp(1.4rem, 4vw, 2rem);
+        margin: 1rem 0 0.75rem;
+      }
+      .nf p {
+        color: var(--text-dim);
+        max-width: 42ch;
+        margin: 0 auto 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="nf">
+      <div>
+        <a href="/" class="wordmark" style="justify-content: center; margin-bottom: 2rem">
+          <svg class="ecg" viewBox="0 0 34 22" aria-hidden="true">
+            <path d="M1 11 H7 L9 11 L11 6 L13 16 L15 3 L17 15 L19 11 H33" />
+          </svg>
+          <span class="wordmark__text"><b>VICTOR</b><span>CURTY</span></span>
+        </a>
+        <div class="nf__code" aria-hidden="true">404</div>
+        <h1>Página não encontrada</h1>
+        <p>O link pode estar quebrado ou a página foi movida. Vamos te levar de volta ao início.</p>
+        <a href="/" class="btn btn--lg">Voltar ao início</a>
+      </div>
+    </main>
+  </body>
+</html>

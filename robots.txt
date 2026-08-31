@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_originais/
+
+Sitemap: https://victorcurtypersonal.com.br/sitemap.xml

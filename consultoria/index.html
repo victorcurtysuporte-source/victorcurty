@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Analytics (ID em /assets/js/tracking.js) — só carrega após consentimento -->
+    <script src="/assets/js/tracking.js" defer></script>
+
+    <title>Consultoria Online de Treino Personalizado | Dr. Victor Curty</title>
+    <meta
+      name="description"
+      content="Consultoria online de treino com o Dr. Victor Curty, doutor em Fisiologia pela UFES: planejamento personalizado, acompanhamento próximo e ajustes semanais para emagrecimento, ganho de massa muscular e definição."
+    />
+    <link rel="canonical" href="https://victorcurtypersonal.com.br/consultoria/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dr. Victor Curty" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Consultoria Online de Treino Personalizado | Dr. Victor Curty" />
+    <meta
+      property="og:description"
+      content="Planejamento de treino personalizado, acompanhamento próximo e ajustes semanais para você evoluir com método e ciência aplicada à sua rotina."
+    />
+    <meta property="og:image" content="https://victorcurtypersonal.com.br/assets/opt/og-consultoria.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Dr. Victor Curty, personal trainer e doutor em Fisiologia" />
+    <meta property="og:url" content="https://victorcurtypersonal.com.br/consultoria/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Consultoria Online de Treino Personalizado | Dr. Victor Curty" />
+    <meta
+      name="twitter:description"
+      content="Planejamento de treino personalizado, acompanhamento próximo e ajustes semanais para você evoluir com método e ciência aplicada à sua rotina."
+    />
+    <meta name="twitter:image" content="https://victorcurtypersonal.com.br/assets/opt/og-consultoria.jpg" />
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/assets/img/favicon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+    <meta name="theme-color" content="#080808" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css?v=35" />
+
+    <link rel="preload" as="image" fetchpriority="high"
+      href="/assets/opt/victor-personal-hero-720.webp"
+      imagesrcset="/assets/opt/victor-personal-hero-480.webp 480w, /assets/opt/victor-personal-hero-720.webp 720w, /assets/opt/victor-personal-hero-1080.webp 1080w"
+      imagesizes="(min-width: 900px) 40vw, 100vw" />
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+        }
+      }
+    </script>
+
+    <!-- GSAP: só a camada de polimento de scroll. SRI fixado na versão 3.12.5. -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Service",
+            "@id": "https://victorcurtypersonal.com.br/consultoria/#servico",
+            "name": "Consultoria online de treino",
+            "serviceType": "Consultoria de treinamento físico online",
+            "url": "https://victorcurtypersonal.com.br/consultoria/",
+            "description": "Consultoria online de treinamento com planejamento personalizado, acompanhamento próximo e ajustes semanais no treino, conduzida pelo Dr. Victor Curty.",
+            "provider": {
+              "@type": "Person",
+              "name": "Victor Magalhães Curty",
+              "url": "https://victorcurtypersonal.com.br/"
+            },
+            "areaServed": "BR",
+            "availableChannel": {
+              "@type": "ServiceChannel",
+              "serviceUrl": "https://victorcurtypersonal.com.br/consultoria/#contato"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Planos da consultoria online",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "name": "Plano mensal",
+                  "price": "257",
+                  "priceCurrency": "BRL",
+                  "url": "https://chk.eduzz.com/E9OGVODVWB",
+                  "availability": "https://schema.org/InStock"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Plano trimestral",
+                  "price": "577",
+                  "priceCurrency": "BRL",
+                  "url": "https://chk.eduzz.com/Z0B1K5739A",
+                  "availability": "https://schema.org/InStock"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Plano semestral",
+                  "price": "797",
+                  "priceCurrency": "BRL",
+                  "url": "https://chk.eduzz.com/G96RJ1NPW1",
+                  "availability": "https://schema.org/InStock"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Plano anual",
+                  "price": "1397",
+                  "priceCurrency": "BRL",
+                  "url": "https://chk.eduzz.com/VWGN5Z7X07",
+                  "availability": "https://schema.org/InStock"
+                }
+              ]
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://victorcurtypersonal.com.br/consultoria/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "A consultoria é totalmente online?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim. A oferta desta página é uma consultoria online, conduzida à distância nos formatos assíncrono e híbrido, conforme a modalidade contratada. Você recebe o planejamento e as orientações para executá-lo no seu tempo, sem depender de horários marcados. Atendimento presencial não faz parte desta oferta."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "O planejamento é personalizado?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim. O planejamento é estruturado a partir do seu objetivo, nível de treinamento, rotina e limitações individuais."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Serve para emagrecimento e para ganho de massa muscular?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim. Emagrecimento, ganho de massa muscular e definição corporal são os principais objetivos atendidos, cada um com uma estratégia adaptada à sua realidade."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Preciso treinar em academia ou posso treinar em casa?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Os dois cenários são possíveis. O planejamento é adaptado ao seu contexto e considera os recursos e o ambiente que você tem disponível para treinar."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Preciso ter experiência com treino?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Não. O planejamento é adaptado ao seu nível, do iniciante ao avançado."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Atende homens também?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim. Embora o Victor seja especialista em musculação feminina, a consultoria atende tanto homens quanto mulheres que buscam resultados com método."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quais formas de pagamento estão disponíveis?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Cada plano é um pagamento único, à vista no PIX ou no cartão, com opção de parcelamento no checkout. Os valores mensais indicados na página são o total do plano dividido pelo período, para você comparar as opções. As condições de cada plano são apresentadas na seção de planos."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Início",
+                "item": "https://victorcurtypersonal.com.br/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Consultoria online",
+                "item": "https://victorcurtypersonal.com.br/consultoria/"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+      <div class="header__inner">
+        <a href="/" class="wordmark" aria-label="Dr. Victor Curty, página inicial">
+          <svg class="ecg" viewBox="0 0 34 22" aria-hidden="true">
+            <path d="M1 11 H7 L9 11 L11 6 L13 16 L15 3 L17 15 L19 11 H33" />
+          </svg>
+          <span class="wordmark__text"><b>VICTOR</b><span>CURTY</span></span>
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="#resultados" class="nav__link">Resultados</a>
+          <a href="#planos" class="nav__link">Planos</a>
+          <a href="#como-funciona" class="nav__link">Como funciona</a>
+          <a href="#sobre" class="nav__link">Sobre</a>
+          <a href="/mentoria/" class="nav__link">Mentoria</a>
+        </nav>
+
+        <div class="header__actions">
+          <a href="#planos" class="btn header__cta">Escolher meu plano</a>
+          <button
+            class="burger"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="mobile-menu__nav" aria-label="Navegação mobile">
+        <a href="#resultados"><span class="idx">01</span> Resultados</a>
+        <a href="#depoimentos"><span class="idx">02</span> Depoimentos</a>
+        <a href="#planos"><span class="idx">03</span> Planos e preços</a>
+        <a href="#como-funciona"><span class="idx">04</span> Como funciona</a>
+        <a href="#para-quem"><span class="idx">05</span> Para quem é</a>
+        <a href="#sobre"><span class="idx">06</span> Sobre o Victor</a>
+        <a href="/mentoria/"><span class="idx">07</span> Mentoria</a>
+        <a href="#planos" class="btn btn--block">Escolher meu plano</a>
+      </nav>
+    </div>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="top">
+        <div class="hero__bg" aria-hidden="true">
+          <canvas class="hero__canvas"></canvas>
+        </div>
+        <div class="container container--wide">
+          <div class="hero__grid">
+            <div class="hero__content">
+              <span class="eyebrow" data-hero style="--d: 0s">Consultoria Online</span>
+              <h1 class="hero__title">
+                <span class="line"><span data-hero style="--d: 0.12s">Emagreça e ganhe massa</span></span>
+                <span class="line"><span data-hero style="--d: 0.22s">com um treino <em>só seu</em>,</span></span>
+                <span class="line"><span data-hero style="--d: 0.32s">ajustado a cada evolução.</span></span>
+              </h1>
+              <p class="hero__sub" data-hero style="--d: 0.5s">
+                Consultoria online do Dr. Victor Curty: planejamento individual no
+                aplicativo, suporte direto no WhatsApp e ajustes semanais.
+                A partir de R$ 257 à vista. No plano anual, pagando à vista,
+                sai por <strong>R$ 116 por mês</strong>.
+              </p>
+
+              <div class="hero__actions" data-hero style="--d: 0.6s">
+                <a href="#planos" class="btn btn--lg">Escolher meu plano</a>
+                <a href="#contato" class="btn btn--ghost btn--lg">Tirar uma dúvida antes</a>
+              </div>
+
+              <ul class="hero__meta" data-hero style="--d: 0.72s">
+                <li>Doutor em Fisiologia pela UFES</li>
+                <li>20 anos de estudo e prática</li>
+                <li>Alunas acompanhadas em todo o Brasil</li>
+              </ul>
+            </div>
+
+            <div class="hero__media">
+              <div class="hero__photo">
+                <img
+                  src="/assets/opt/victor-personal-hero-720.webp"
+                  srcset="
+                    /assets/opt/victor-personal-hero-480.webp   480w,
+                    /assets/opt/victor-personal-hero-720.webp   720w,
+                    /assets/opt/victor-personal-hero-1080.webp 1080w
+                  "
+                  sizes="(min-width: 900px) 40vw, 100vw"
+                  alt="Dr. Victor Curty, personal trainer, prescrevendo treinos no computador"
+                  width="3120"
+                  height="4160"
+                  fetchpriority="high"
+                  decoding="async"
+                  style="object-position: 50% 20%"
+                />
+              </div>
+              <span class="hero__rule" aria-hidden="true"></span>
+              <div class="hero__stat">
+                <strong>20</strong>
+                <span>anos de estudo e prática</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">Role <span></span></div>
+      </section>
+
+
+      <!-- ============ IDENTIFICAÇÃO ============ -->
+      <section class="section section--graphite">
+        <div class="section__index" aria-hidden="true">01</div>
+        <div class="container">
+          <div class="lead">
+            <div class="lead__title reveal">
+              Você se esforça, mas sente que seus resultados não acompanham sua
+              dedicação?
+            </div>
+            <div class="lead__body reveal" data-delay="1">
+              <p>
+                Nem sempre a falta de resultado está relacionada à falta de
+                esforço. Muitas vezes, o que falta é um planejamento adequado,
+                uma estratégia coerente e alguém capaz de acompanhar os ajustes
+                ao longo do processo.
+              </p>
+            </div>
+          </div>
+
+          <div class="painlist" style="margin-top: clamp(2.5rem, 5vw, 3.5rem)">
+            <div class="painlist__item reveal">
+              <span class="painlist__num">01</span>
+              <span class="painlist__text">Você treina, mas não sabe se está seguindo o planejamento certo.</span>
+              <span class="painlist__arrow" aria-hidden="true">→</span>
+            </div>
+            <div class="painlist__item reveal">
+              <span class="painlist__num">02</span>
+              <span class="painlist__text">Já tentou diferentes métodos e continua sem alcançar o resultado desejado.</span>
+              <span class="painlist__arrow" aria-hidden="true">→</span>
+            </div>
+            <div class="painlist__item reveal">
+              <span class="painlist__num">03</span>
+              <span class="painlist__text">Tem dificuldade para conciliar treino, trabalho e vida pessoal.</span>
+              <span class="painlist__arrow" aria-hidden="true">→</span>
+            </div>
+            <div class="painlist__item reveal">
+              <span class="painlist__num">04</span>
+              <span class="painlist__text">Não sabe quando aumentar carga, volume ou intensidade.</span>
+              <span class="painlist__arrow" aria-hidden="true">→</span>
+            </div>
+            <div class="painlist__item reveal">
+              <span class="painlist__num">05</span>
+              <span class="painlist__text">Sente que precisa de um plano adaptado à sua realidade.</span>
+              <span class="painlist__arrow" aria-hidden="true">→</span>
+            </div>
+            <div class="painlist__item reveal">
+              <span class="painlist__num">06</span>
+              <span class="painlist__text">Quer emagrecer ou ganhar massa, mas não sabe por onde começar.</span>
+              <span class="painlist__arrow" aria-hidden="true">→</span>
+            </div>
+          </div>
+
+          <p class="highlight reveal">
+            O problema não é simplesmente treinar mais. É treinar com uma
+            estratégia que faça sentido para você.
+          </p>
+        </div>
+      </section>
+
+
+      <!-- ============ RESULTADOS ============ -->
+      <section class="section" id="resultados">
+        <div class="section__index" aria-hidden="true">02</div>
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Resultados reais</span>
+            <h2>Alunas que pararam de improvisar e mudaram o corpo.</h2>
+            <p>
+              Antes e depois de alunas em acompanhamento, cada uma com a própria
+              rotina, o próprio prazo e o mesmo processo por trás.
+            </p>
+          </div>
+
+          <div class="results">
+            <figure class="result reveal">
+              <div class="result__pair">
+                <div class="result__ba"><img
+                  src="/assets/opt/antes-1-360.webp"
+                  srcset="/assets/opt/antes-1-360.webp 360w, /assets/opt/antes-1-720.webp 720w"
+                  sizes="(min-width: 900px) 18vw, 44vw"
+                  alt="Aluna antes do acompanhamento"
+                  width="1200" height="1600" loading="lazy" decoding="async"
+                /><span>Antes</span></div>
+                <div class="result__ba"><img
+                  src="/assets/opt/depois-1-360.webp"
+                  srcset="/assets/opt/depois-1-360.webp 360w, /assets/opt/depois-1-720.webp 720w"
+                  sizes="(min-width: 900px) 18vw, 44vw"
+                  alt="Aluna após o acompanhamento"
+                  width="1200" height="1600" loading="lazy" decoding="async"
+                /><span class="is-after">Depois</span></div>
+              </div>
+            </figure>
+            <figure class="result reveal" data-delay="1">
+              <div class="result__pair">
+                <div class="result__ba"><img
+                  src="/assets/opt/antes-2-360.webp"
+                  srcset="/assets/opt/antes-2-360.webp 360w, /assets/opt/antes-2-720.webp 720w"
+                  sizes="(min-width: 900px) 18vw, 44vw"
+                  alt="Aluna antes do acompanhamento"
+                  width="1200" height="1600" loading="lazy" decoding="async"
+                /><span>Antes</span></div>
+                <div class="result__ba"><img
+                  src="/assets/opt/depois-2-360.webp"
+                  srcset="/assets/opt/depois-2-360.webp 360w, /assets/opt/depois-2-720.webp 720w"
+                  sizes="(min-width: 900px) 18vw, 44vw"
+                  alt="Aluna após o acompanhamento"
+                  width="1200" height="1600" loading="lazy" decoding="async"
+                /><span class="is-after">Depois</span></div>
+              </div>
+            </figure>
+            <figure class="result reveal" data-delay="2">
+              <div class="result__pair">
+                <div class="result__ba"><img
+                  src="/assets/opt/antes-3-360.webp"
+                  srcset="/assets/opt/antes-3-360.webp 360w, /assets/opt/antes-3-720.webp 720w"
+                  sizes="(min-width: 900px) 18vw, 44vw"
+                  alt="Aluna antes do acompanhamento"
+                  width="1112" height="1600" loading="lazy" decoding="async"
+                /><span>Antes</span></div>
+                <div class="result__ba"><img
+                  src="/assets/opt/depois-3-360.webp"
+                  srcset="/assets/opt/depois-3-360.webp 360w, /assets/opt/depois-3-720.webp 720w"
+                  sizes="(min-width: 900px) 18vw, 44vw"
+                  alt="Aluna após o acompanhamento"
+                  width="1102" height="1600" loading="lazy" decoding="async"
+                /><span class="is-after">Depois</span></div>
+              </div>
+            </figure>
+            <figure class="result reveal" data-delay="3">
+              <div class="result__pair">
+                <div class="result__ba"><img
+                  src="/assets/opt/antes-4-360.webp"
+                  srcset="/assets/opt/antes-4-360.webp 360w, /assets/opt/antes-4-720.webp 720w"
+                  sizes="(min-width: 900px) 18vw, 44vw"
+                  alt="Aluna antes do acompanhamento"
+                  width="1201" height="1600" loading="lazy" decoding="async"
+                /><span>Antes</span></div>
+                <div class="result__ba"><img
+                  src="/assets/opt/depois-4-360.webp"
+                  srcset="/assets/opt/depois-4-360.webp 360w, /assets/opt/depois-4-720.webp 720w"
+                  sizes="(min-width: 900px) 18vw, 44vw"
+                  alt="Aluna após o acompanhamento"
+                  width="868" height="1156" loading="lazy" decoding="async"
+                /><span class="is-after">Depois</span></div>
+              </div>
+            </figure>
+            <figure class="result reveal" data-delay="1">
+              <div class="result__pair">
+                <div class="result__ba"><img
+                  src="/assets/opt/antes-5-360.webp"
+                  srcset="/assets/opt/antes-5-360.webp 360w, /assets/opt/antes-5-720.webp 720w"
+                  sizes="(min-width: 900px) 18vw, 44vw"
+                  alt="Aluna antes do acompanhamento"
+                  width="946" height="1280" loading="lazy" decoding="async"
+                /><span>Antes</span></div>
+                <div class="result__ba"><img
+                  src="/assets/opt/depois-5-360.webp"
+                  srcset="/assets/opt/depois-5-360.webp 360w, /assets/opt/depois-5-720.webp 720w"
+                  sizes="(min-width: 900px) 18vw, 44vw"
+                  alt="Aluna após o acompanhamento"
+                  width="1226" height="1600" loading="lazy" decoding="async"
+                /><span class="is-after">Depois</span></div>
+              </div>
+            </figure>
+            <figure class="result reveal" data-delay="2">
+              <div class="result__pair">
+                <div class="result__ba"><img
+                  src="/assets/opt/antes-6-360.webp"
+                  srcset="/assets/opt/antes-6-360.webp 360w, /assets/opt/antes-6-540.webp 540w"
+                  sizes="(min-width: 900px) 18vw, 44vw"
+                  alt="Aluna antes do acompanhamento"
+                  width="540" height="720" loading="lazy" decoding="async"
+                /><span>Antes</span></div>
+                <div class="result__ba"><img
+                  src="/assets/opt/depois-6-360.webp"
+                  srcset="/assets/opt/depois-6-360.webp 360w, /assets/opt/depois-6-540.webp 540w"
+                  sizes="(min-width: 900px) 18vw, 44vw"
+                  alt="Aluna após o acompanhamento, com 9 kg a menos"
+                  width="540" height="720" loading="lazy" decoding="async"
+                /><span class="is-after">Depois</span></div>
+              </div>
+            </figure>
+          </div>
+          <span class="note reveal"
+            >Resultados reais de alunas em acompanhamento. Cada evolução respeita a
+            rotina e o processo individual.</span
+          >
+        </div>
+      </section>
+
+      <!-- ============ DEPOIMENTOS ============ -->
+      <section class="section section--graphite" id="depoimentos">
+        <div class="section__index" aria-hidden="true">03</div>
+        <div class="container">
+          <div class="section-head center reveal">
+            <span class="eyebrow">Depoimentos</span>
+            <h2>O que elas dizem depois de começar.</h2>
+            <p>
+              Mensagens reais de alunas em acompanhamento. Se você quer o mesmo
+              tipo de processo, veja abaixo como ele funciona.
+            </p>
+          </div>
+
+          <span class="note reveal" style="margin: -1rem 0 2.25rem"
+            >Relatos de alunas em acompanhamento. Os resultados variam conforme
+            rotina, constância e individualidade.</span
+          >
+
+          <div class="tgrid">
+            <figure class="tcard reveal">
+              <blockquote>
+                Já foram 9 kg a menos, mas o que mais me orgulha é perceber que
+                treino após treino, escolha após escolha, eu aprendi que
+                resultado é consequência de não desistir. Ainda falta caminho,
+                mas hoje consigo olhar para trás e ver o quanto já evoluí.
+              </blockquote>
+              <figcaption>
+                <span class="tcard__name">Thayná L.</span>
+                <span class="tcard__metric">−9 kg</span>
+              </figcaption>
+            </figure>
+
+            <figure class="tcard reveal">
+              <blockquote>
+                Sempre detestei academia, mas a forma como você monta os treinos
+                é super diferente. Os resultados foram ótimos e me ajudaram muito
+                no processo.
+              </blockquote>
+              <figcaption>
+                <span class="tcard__name">Karine A.</span>
+                <span class="tcard__metric">−13,3 kg · −11,3 kg de gordura</span>
+              </figcaption>
+            </figure>
+
+            <figure class="tcard reveal">
+              <blockquote>
+                Já vejo resultado e perdi medidas. Quando olho no espelho, estou
+                gostando do que vejo.
+              </blockquote>
+              <figcaption>
+                <span class="tcard__name">Geilda P.</span>
+                <span class="tcard__metric">−12 kg</span>
+              </figcaption>
+            </figure>
+
+            <figure class="tcard reveal">
+              <blockquote>
+                Estou muito feliz com os resultados. Esse é o ano das mudanças!
+              </blockquote>
+              <figcaption>
+                <span class="tcard__name">Carol A.</span>
+                <span class="tcard__metric">−7 kg · −8% de gordura · aumento significativo de massa muscular</span>
+              </figcaption>
+            </figure>
+
+            <figure class="tcard reveal">
+              <blockquote>
+                Nada estava me cabendo… aí olhei as fotos: o botão da roupa que
+                antes quase não fechava. Obrigada demais por isso!
+              </blockquote>
+              <figcaption>
+                <span class="tcard__name">Suellen M.</span>
+                <span class="tcard__metric">−20 kg</span>
+              </figcaption>
+            </figure>
+
+            <figure class="tcard reveal">
+              <blockquote>
+                Sem seus treinos tão bem planejados e ajustados, esse resultado
+                não teria aparecido.
+              </blockquote>
+              <figcaption>
+                <span class="tcard__name">Kátia B.</span>
+                <span class="tcard__metric">−7 kg</span>
+              </figcaption>
+            </figure>
+
+            <!-- Ocultos até o Victor trazer nome e resultado de cada uma.
+                 Para reativar: apagar estas duas linhas de comentário e
+                 preencher tcard__name e tcard__metric como nos cards acima.
+            <figure class="tcard reveal">
+              <blockquote>
+                Tem menos de um mês que comecei e já vejo diferença no corpo:
+                durmo melhor, o abdômen reduziu e estou muito mais disposta.
+              </blockquote>
+              <figcaption>
+                <span class="tcard__name">Aluna da consultoria</span>
+              </figcaption>
+            </figure>
+
+            <figure class="tcard reveal">
+              <blockquote>
+                Treinos compactos e excelentes. Já indiquei você para duas amigas,
+                e já fui fechar o plano trimestral.
+              </blockquote>
+              <figcaption>
+                <span class="tcard__name">Aluna da consultoria</span>
+              </figcaption>
+            </figure>
+            -->
+          </div>
+
+          <div class="hero__actions reveal" style="justify-content: center; margin-top: clamp(2.5rem, 5vw, 3.5rem)">
+            <a href="#planos" class="btn btn--lg">Escolher meu plano</a>
+            <a href="#como-funciona" class="btn btn--ghost btn--lg">Ver como funciona</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BENEFÍCIOS ============ -->
+      <section class="section section--light" id="beneficios">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">O que você recebe</span>
+            <h2>Tudo isso está incluído em qualquer plano.</h2>
+          </div>
+          <ul class="benefits">
+            <li class="reveal">Treinos personalizados no aplicativo</li>
+            <li class="reveal">Vídeos demonstrativos de cada exercício</li>
+            <li class="reveal">Ajustes semanais no seu planejamento</li>
+            <li class="reveal">Suporte direto via WhatsApp</li>
+            <li class="reveal">Comunidade exclusiva de alunas</li>
+            <li class="reveal">Correção técnica por vídeo</li>
+            <li class="reveal">Estratégia personalizada para o seu objetivo</li>
+            <li class="reveal">E-book da nutricionista (exceto plano mensal)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ VALOR PERCEBIDO ============ -->
+      <section class="section section--graphite" id="valor">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">O quanto isso vale</span>
+            <h2>Contratado separado, sairia muito mais caro.</h2>
+          </div>
+          <div class="valuestack reveal">
+            <ul class="valuestack__list">
+              <li>Treino personalizado <span>R$ 200 a 400/mês</span></li>
+              <li>Ajustes semanais e reavaliações <span>R$ 100 a 200</span></li>
+              <li>Comunidade + suporte <span>R$ 100 a 200/mês</span></li>
+              <li>Correção técnica por vídeo <span>R$ 100 a 150</span></li>
+              <li>E-book de nutrição <span>R$ 100+</span></li>
+            </ul>
+            <div class="valuestack__total">
+              <span class="valuestack__anchor">Somando tudo: R$ 600 a R$ 1.000 por mês</span>
+              <p>
+                Na consultoria, o processo completo sai a partir de
+                <strong>R$ 116 por mês</strong>, no plano anual de R$ 1.397 à
+                vista. Nos outros planos, o investimento mensal fica entre
+                R$ 133 e R$ 257.
+              </p>
+              <a href="#planos" class="btn btn--lg">Ver os planos e preços</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PLANOS ============ -->
+      <section class="section section--light" id="planos">
+        <div class="section__index" aria-hidden="true">04</div>
+        <div class="container">
+          <div class="section-head center reveal">
+            <span class="eyebrow">Planos e preços</span>
+            <h2>Escolha o tempo do seu processo e comece hoje.</h2>
+            <p>
+              Todos os preços abaixo são <strong>à vista, já com desconto</strong>,
+              no PIX ou no cartão. Quanto maior o período, menor o valor por mês
+              e maior o espaço para consolidar o resultado.
+            </p>
+          </div>
+
+          <div class="plans">
+            <div class="plans__stack">
+              <div class="plan plan--row reveal">
+                <span class="plan__name">Mensal</span>
+                <p class="plan__desc">Ideal para quem quer iniciar o processo.</p>
+                <div class="plan__pricebox">
+                  <div class="plan__price"><span class="cur">R$</span><span class="amount">257</span></div>
+                  <p class="plan__info">À vista no PIX ou cartão</p>
+                </div>
+                <a href="https://chk.eduzz.com/E9OGVODVWB" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--block">Escolher mensal</a>
+              </div>
+
+              <div class="plan plan--row reveal" data-delay="1">
+                <span class="plan__name">Trimestral</span>
+                <p class="plan__desc">Para iniciar um ciclo de evolução.</p>
+                <div class="plan__pricebox">
+                  <p class="plan__old">R$ 697</p>
+                  <div class="plan__price"><span class="cur">R$</span><span class="amount">577</span></div>
+                  <p class="plan__save">Economia de R$ 120</p>
+                  <p class="plan__info">À vista, equivale a R$ 192/mês</p>
+                </div>
+                <a href="https://chk.eduzz.com/Z0B1K5739A" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--block">Escolher trimestral</a>
+              </div>
+
+              <div class="plan plan--row reveal" data-delay="2">
+                <span class="plan__name">Semestral</span>
+                <p class="plan__desc">Para consistência no médio prazo.</p>
+                <div class="plan__pricebox">
+                  <p class="plan__old">R$ 1.097</p>
+                  <div class="plan__price"><span class="cur">R$</span><span class="amount">797</span></div>
+                  <p class="plan__save">Economia de R$ 300</p>
+                  <p class="plan__info">À vista, equivale a R$ 133/mês</p>
+                </div>
+                <a href="https://chk.eduzz.com/G96RJ1NPW1" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--block">Escolher semestral</a>
+              </div>
+            </div>
+
+            <div class="plan plan--featured reveal" data-delay="1">
+              <div>
+                <div class="plan__badges">
+                  <span class="badge">Mais procurado</span>
+                  <span class="badge badge--soft">Maior economia</span>
+                </div>
+                <span class="plan__name">Consultoria Anual</span>
+              </div>
+              <div>
+                <p class="plan__old">R$ 2.097</p>
+                <div class="plan__price"><span class="cur">R$</span><span class="amount">1.397</span></div>
+                <p class="plan__save">Economia de R$ 700</p>
+                <p class="plan__info">Pagando à vista, <strong>equivale a R$ 116 por mês</strong>, o menor valor mensal de todos os planos</p>
+                <p class="plan__desc">
+                  Ideal para quem deseja um compromisso de longo prazo e o maior
+                  espaço para consolidar resultados.
+                </p>
+                <ul class="plan__features">
+                  <li>Planejamento de treino personalizado para o seu objetivo</li>
+                  <li>Treinos no aplicativo, com vídeo demonstrativo de cada exercício</li>
+                  <li>Correção técnica por vídeo e orientação de execução</li>
+                  <li>Ajustes semanais no treino, do começo ao fim do plano</li>
+                  <li>Avaliações e reavaliações de progresso conforme sua evolução</li>
+                  <li>Suporte direto no WhatsApp para tirar suas dúvidas</li>
+                  <li>Comunidade exclusiva de alunas</li>
+                  <li>E-book da nutricionista</li>
+                </ul>
+              </div>
+              <a href="https://chk.eduzz.com/VWGN5Z7X07" target="_blank" rel="noopener noreferrer" class="btn btn--lg btn--block">Escolher anual</a>
+            </div>
+          </div>
+          <p class="plans-foot">
+            Cada plano é um pagamento único, com opção de parcelamento no
+            checkout. Os valores mensais indicados são o total do plano dividido
+            pelo período. Pagamento processado com segurança pela Eduzz, PIX ou
+            cartão.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ COMO FUNCIONA ============ -->
+      <section class="section section--graphite" id="como-funciona">
+        <div class="section__index" aria-hidden="true">05</div>
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Como funciona</span>
+            <h2>Cinco etapas, do primeiro contato ao seu treino ajustado.</h2>
+            <p>
+              Nada de ficha pronta: o processo começa entendendo a sua rotina e
+              continua sendo ajustado enquanto você evolui.
+            </p>
+          </div>
+
+          <div class="split split--reverse">
+          <div class="timeline">
+            <div class="timeline__progress" aria-hidden="true"></div>
+            <div class="step">
+              <span class="step__num">01</span>
+              <div>
+                <h3>Avaliação individual</h3>
+                <p>Você envia suas informações e entendemos seu objetivo, sua rotina, seu histórico, seu nível de treinamento e suas principais limitações.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step__num">02</span>
+              <div>
+                <h3>Planejamento personalizado</h3>
+                <p>O Dr. Victor estrutura o treinamento de acordo com as suas necessidades e a sua disponibilidade real.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step__num">03</span>
+              <div>
+                <h3>Execução com orientação</h3>
+                <p>Você recebe orientações claras de execução para treinar com mais segurança, direção e consistência.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step__num">04</span>
+              <div>
+                <h3>Acompanhamento próximo</h3>
+                <p>Toda semana o Dr. Victor acompanha a sua execução, a sua carga e a sua resposta ao treino, para identificar a evolução e os desafios enquanto eles acontecem.</p>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step__num">05</span>
+              <div>
+                <h3>Ajustes semanais</h3>
+                <p>O planejamento é revisado e modificado a cada semana, conforme a sua resposta, o seu desempenho e o seu progresso. Você nunca repete um mês inteiro de treino no automático.</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="split__media reveal-clip" data-delay="1">
+              <img
+                src="/assets/opt/victor-personal-pratica-620.webp"
+                alt="Dr. Victor Curty montando o planejamento de treino de uma aluna no computador"
+                width="3120"
+                height="4160"
+                loading="lazy"
+                decoding="async"
+                style="object-position: 50% 35%"
+              />
+            </div>
+          </div>
+
+          <p class="highlight reveal">
+            O planejamento não é estático. Ele é revisado toda semana e evolui junto com você.
+          </p>
+
+          <span class="note reveal"
+            >Formato online, assíncrono e híbrido, conforme a modalidade
+            contratada.</span
+          >
+
+          <div class="hero__actions reveal" style="margin-top: clamp(2rem, 4vw, 3rem)">
+            <a href="#planos" class="btn btn--lg">Escolher meu plano</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BANDA, NA PRÁTICA ============ -->
+      <section class="band">
+        <img
+          src="/assets/opt/victor-personal-1280.webp"
+          srcset="
+            /assets/opt/victor-personal-768.webp   768w,
+            /assets/opt/victor-personal-1280.webp 1280w
+          "
+          sizes="100vw"
+          alt="Dr. Victor Curty acompanhando o treino de uma aluna na academia"
+          width="1600"
+          height="1066"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="container">
+          <div class="band__text reveal">
+            <span class="eyebrow">Na prática</span>
+            <h2>Acompanhamento próximo, do planejamento à execução.</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PARA QUEM É ============ -->
+      <section class="section section--graphite" id="para-quem">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Para quem é</span>
+            <h2>Para quem quer evoluir com direção.</h2>
+          </div>
+
+          <div class="audience">
+            <div class="audience__col audience__col--yes reveal">
+              <h3>A consultoria é para você se:</h3>
+              <ul class="audience__list audience__list--yes">
+                <li>Quer emagrecer.</li>
+                <li>Deseja ganhar massa muscular.</li>
+                <li>Busca mais definição corporal.</li>
+                <li>Tem uma rotina corrida.</li>
+                <li>Já treina, mas sente que está estagnada.</li>
+                <li>Quer deixar de depender de treinos genéricos.</li>
+                <li>Busca acompanhamento profissional.</li>
+                <li>Está disposta a construir consistência.</li>
+              </ul>
+            </div>
+            <div class="audience__col reveal" data-delay="1">
+              <h3>A consultoria não é para quem:</h3>
+              <ul class="audience__list audience__list--no">
+                <li>Procura apenas uma ficha pronta sem acompanhamento.</li>
+                <li>Espera resultados sem consistência.</li>
+                <li>Não pretende seguir as orientações.</li>
+                <li>Busca promessas rápidas ou milagrosas.</li>
+                <li>Está procurando preços de atendimento presencial.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SOBRE O VICTOR ============ -->
+      <section class="section" id="sobre">
+        <div class="section__index" aria-hidden="true">06</div>
+        <div class="container">
+          <div class="split">
+            <div class="split__media reveal-clip">
+              <img
+                src="/assets/opt/victor-estudo-620.webp"
+                alt="Dr. Victor Curty estudando o livro de biomecânica da musculação para mulheres"
+                width="960"
+                height="1280"
+                loading="lazy"
+                decoding="async"
+                data-parallax="30"
+                style="object-position: 50% 15%"
+              />
+            </div>
+            <div class="about__text reveal" data-delay="1">
+              <span class="eyebrow">Sobre o Victor</span>
+              <h2>Ciência, prática e experiência aplicadas ao seu objetivo.</h2>
+              <p>
+                Victor Magalhães Curty é personal trainer, formado em Educação
+                Física desde 2009 e doutor em Fisiologia pela Universidade Federal
+                do Espírito Santo, UFES, desde 2018. Sua trajetória reúne 20
+                anos de estudo e prática dedicados ao treinamento, à hipertrofia,
+                ao emagrecimento e à performance humana.
+              </p>
+              <p>
+                Atuou por anos na área acadêmica, contribuindo para a formação de
+                centenas de profissionais da saúde. Sua experiência foi construída
+                na combinação entre conhecimento científico, prática profissional e
+                vivência direta com diferentes modalidades esportivas.
+              </p>
+              <p>
+                Victor também viveu durante anos uma rotina de atleta, e construiu
+                sua trajetória ao lado da família, tendo a esposa, nutricionista,
+                como parceira de vida. Para ele, disciplina e resiliência não são
+                conceitos de discurso: consistência não significa perfeição,
+                significa construir um processo possível e sustentá-lo ao longo do
+                tempo.
+              </p>
+
+              <div class="facts" data-stagger>
+                <div class="fact">
+                  <div class="fact__num">2009</div>
+                  <div class="fact__label">Formação em Educação Física</div>
+                </div>
+                <div class="fact">
+                  <div class="fact__num">2018</div>
+                  <div class="fact__label">Doutorado em Fisiologia · UFES</div>
+                </div>
+                <div class="fact">
+                  <div class="fact__num">20</div>
+                  <div class="fact__label">Anos de estudo e prática</div>
+                </div>
+                <div class="fact">
+                  <div class="fact__num">∞</div>
+                  <div class="fact__label">Treinador e mentor</div>
+                </div>
+              </div>
+
+              <div class="hero__actions">
+                <a
+                  href="https://www.instagram.com/victor.curty/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn--ghost"
+                  >Conheça o trabalho do Victor no Instagram</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="section section--graphite">
+        <div class="container">
+          <div class="section-head center reveal">
+            <span class="eyebrow">Dúvidas frequentes</span>
+            <h2>Perguntas frequentes sobre a consultoria.</h2>
+          </div>
+
+          <div class="faq">
+            <div class="acc reveal">
+              <button class="acc__btn" aria-expanded="false" id="fq1-label" aria-controls="fq1">
+                A consultoria é totalmente online?
+                <span class="acc__icon" aria-hidden="true"></span>
+              </button>
+              <div class="acc__panel" id="fq1" role="region" aria-labelledby="fq1-label">
+                <div class="acc__panel-inner">
+                  Sim. A oferta desta página é uma consultoria online, conduzida à distância nos formatos assíncrono e híbrido, conforme a modalidade contratada. Você recebe o planejamento e as orientações para executá-lo no seu tempo, sem depender de horários marcados. Atendimento presencial não faz parte desta oferta.
+                </div>
+              </div>
+            </div>
+            <div class="acc reveal">
+              <button class="acc__btn" aria-expanded="false" id="fq2-label" aria-controls="fq2">
+                O planejamento é personalizado?
+                <span class="acc__icon" aria-hidden="true"></span>
+              </button>
+              <div class="acc__panel" id="fq2" role="region" aria-labelledby="fq2-label">
+                <div class="acc__panel-inner">
+                  Sim. O planejamento é estruturado a partir do seu objetivo, nível de treinamento, rotina e limitações individuais.
+                </div>
+              </div>
+            </div>
+            <div class="acc reveal">
+              <button class="acc__btn" aria-expanded="false" id="fq3-label" aria-controls="fq3">
+                Serve para emagrecimento e para ganho de massa muscular?
+                <span class="acc__icon" aria-hidden="true"></span>
+              </button>
+              <div class="acc__panel" id="fq3" role="region" aria-labelledby="fq3-label">
+                <div class="acc__panel-inner">
+                  Sim. Emagrecimento, ganho de massa muscular e definição corporal são os principais objetivos atendidos, cada um com uma estratégia adaptada à sua realidade.
+                </div>
+              </div>
+            </div>
+            <div class="acc reveal">
+              <button class="acc__btn" aria-expanded="false" id="fq4-label" aria-controls="fq4">
+                Preciso treinar em academia ou posso treinar em casa?
+                <span class="acc__icon" aria-hidden="true"></span>
+              </button>
+              <div class="acc__panel" id="fq4" role="region" aria-labelledby="fq4-label">
+                <div class="acc__panel-inner">
+                  Os dois cenários são possíveis. O planejamento é adaptado ao seu contexto e considera os recursos e o ambiente que você tem disponível para treinar.
+                </div>
+              </div>
+            </div>
+            <div class="acc reveal">
+              <button class="acc__btn" aria-expanded="false" id="fq5-label" aria-controls="fq5">
+                Preciso ter experiência com treino?
+                <span class="acc__icon" aria-hidden="true"></span>
+              </button>
+              <div class="acc__panel" id="fq5" role="region" aria-labelledby="fq5-label">
+                <div class="acc__panel-inner">
+                  Não. O planejamento é adaptado ao seu nível, do iniciante ao avançado.
+                </div>
+              </div>
+            </div>
+            <div class="acc reveal">
+              <button class="acc__btn" aria-expanded="false" id="fq6-label" aria-controls="fq6">
+                Atende homens também?
+                <span class="acc__icon" aria-hidden="true"></span>
+              </button>
+              <div class="acc__panel" id="fq6" role="region" aria-labelledby="fq6-label">
+                <div class="acc__panel-inner">
+                  Sim. Embora o Victor seja especialista em musculação feminina, a consultoria atende tanto homens quanto mulheres que buscam resultados com método.
+                </div>
+              </div>
+            </div>
+            <div class="acc reveal">
+              <button class="acc__btn" aria-expanded="false" id="fq7-label" aria-controls="fq7">
+                Quais formas de pagamento estão disponíveis?
+                <span class="acc__icon" aria-hidden="true"></span>
+              </button>
+              <div class="acc__panel" id="fq7" role="region" aria-labelledby="fq7-label">
+                <div class="acc__panel-inner">
+                  Cada plano é um pagamento único, à vista no PIX ou no cartão, com opção de parcelamento no checkout. Os valores mensais indicados na página são o total do plano dividido pelo período, para você comparar as opções. As condições de cada plano são apresentadas na seção de planos.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FORMULÁRIO ============ -->
+      <section class="section section--light" id="contato">
+        <div class="container">
+          <div class="form-wrap">
+            <div class="form__aside reveal">
+              <span class="eyebrow">Fale com o Dr. Victor</span>
+              <h2>Dê o primeiro passo da sua evolução.</h2>
+              <p>
+                Envie suas informações e entramos em contato pelo WhatsApp ou e-mail
+                para orientar os próximos passos da consultoria online. Seus dados são
+                usados só para esse contato.
+              </p>
+              <ul>
+                <li>Planejamento personalizado para o seu objetivo.</li>
+                <li>Acompanhamento próximo e ajustes ao longo do processo.</li>
+                <li>Formato online, pensado para a sua rotina.</li>
+              </ul>
+            </div>
+
+            <form
+              class="form reveal"
+              name="consultoria"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              data-form
+              data-success="Recebemos suas informações. Em breve entramos em contato pelo WhatsApp ou e-mail que você informou, para orientar os próximos passos."
+              novalidate
+            >
+              <input type="hidden" name="form-name" value="consultoria" />
+              <p class="form__hp" aria-hidden="true">
+                <label>Não preencha este campo: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+              </p>
+
+              <div class="form__row">
+                <div class="field">
+                  <label for="c-nome">Nome <span class="req">*</span></label>
+                  <input id="c-nome" name="nome" type="text" required autocomplete="name" />
+                  <span class="field__error">Informe seu nome.</span>
+                </div>
+                <div class="field">
+                  <label for="c-whats">WhatsApp <span class="req">*</span></label>
+                  <input id="c-whats" name="whatsapp" type="tel" required autocomplete="tel" placeholder="(27) 90000-0000" />
+                  <span class="field__error">Informe um WhatsApp válido.</span>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="field">
+                  <label for="c-email">E-mail <span class="req">*</span></label>
+                  <input id="c-email" name="email" type="email" required autocomplete="email" />
+                  <span class="field__error">Informe um e-mail válido.</span>
+                </div>
+                <div class="field">
+                  <label for="c-cidade">Cidade</label>
+                  <input id="c-cidade" name="cidade" type="text" autocomplete="address-level2" />
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="field">
+                  <label for="c-objetivo">Objetivo principal <span class="req">*</span></label>
+                  <select id="c-objetivo" name="objetivo" required>
+                    <option value="" selected disabled>Selecione</option>
+                    <option>Emagrecimento</option>
+                    <option>Ganho de massa muscular</option>
+                    <option>Definição</option>
+                    <option>Outro</option>
+                  </select>
+                  <span class="field__error">Selecione um objetivo.</span>
+                </div>
+                <div class="field">
+                  <label for="c-faixa">Faixa etária</label>
+                  <select id="c-faixa" name="faixa_etaria">
+                    <option value="" selected disabled>Selecione</option>
+                    <option>Até 24 anos</option>
+                    <option>25 a 34 anos</option>
+                    <option>35 a 44 anos</option>
+                    <option>45 a 54 anos</option>
+                    <option>55 anos ou mais</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="field">
+                  <label for="c-como">Como conheceu o Dr. Victor</label>
+                  <input id="c-como" name="como_conheceu" type="text" />
+                </div>
+                <div class="field">
+                  <label for="c-plano">Plano de interesse</label>
+                  <select id="c-plano" name="plano">
+                    <option value="" selected disabled>Selecione</option>
+                    <option>Mensal</option>
+                    <option>Trimestral</option>
+                    <option>Semestral</option>
+                    <option>Anual</option>
+                    <option>Ainda não decidi</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="c-msg">Mensagem</label>
+                <textarea id="c-msg" name="mensagem" rows="4"></textarea>
+              </div>
+
+              <div class="field field--consent">
+                <label class="consent-check" for="c-consent">
+                  <input id="c-consent" name="consentimento" type="checkbox" value="sim" required />
+                  <span>
+                    Li e concordo com a
+                    <a href="/privacidade/" target="_blank" rel="noopener">Política de Privacidade</a>
+                    e autorizo o uso dos meus dados para contato sobre a consultoria.
+                  </span>
+                </label>
+                <span class="field__error">É necessário aceitar para enviar.</span>
+              </div>
+
+              <button type="submit" class="btn btn--block btn--lg">Quero falar com o Dr. Victor</button>
+              <p class="form__status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="/" class="wordmark">
+              <svg class="ecg" viewBox="0 0 34 22" aria-hidden="true">
+                <path d="M1 11 H7 L9 11 L11 6 L13 16 L15 3 L17 15 L19 11 H33" />
+              </svg>
+              <span class="wordmark__text"><b>VICTOR</b><span>CURTY</span></span>
+            </a>
+            <p>
+              Victor Magalhães Curty, Personal trainer, treinador e mentor.
+              Doutor em Fisiologia pela UFES. Serra/ES.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h4>Navegação</h4>
+            <a href="#como-funciona">Como funciona a consultoria</a>
+            <a href="#planos">Planos</a>
+            <a href="#sobre">Sobre o Victor</a>
+            <a href="/mentoria/">Mentoria Método RACI®</a>
+            <a href="/mentoria/#aplicacao">Falar sobre a mentoria</a>
+          </div>
+          <div class="footer__col">
+            <h4>Contato</h4>
+            <a
+              href="https://www.instagram.com/victor.curty/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram @victor.curty</a
+            >
+            <a
+              href="https://wa.me/5527981437020?text=Ol%C3%A1%2C%20Dr.%20Victor!%20Quero%20saber%20mais%20sobre%20a%20consultoria%20online."
+              target="_blank"
+              rel="noopener noreferrer"
+              >Falar no WhatsApp</a
+            >
+            <a href="mailto:victorcurtysuporte@gmail.com">victorcurtysuporte@gmail.com</a>
+            <a href="/privacidade/">Política de privacidade</a>
+            <a href="/termos/">Termos de uso</a>
+          </div>
+        </div>
+
+        <p class="footer__disclaimer">
+          Os resultados podem variar de acordo com fatores individuais,
+          consistência, rotina e adesão ao processo.
+        </p>
+
+        <div class="footer__bottom">
+          <span>© 2026 Dr. Victor Curty. Todos os direitos reservados.</span>
+          <span>Serra/ES · Atendimento online · <button type="button" class="footer__cookie" data-open-consent>Cookies</button></span>
+          <a class="footer__credit" href="https://anamk.com" target="_blank" rel="noopener">Desenvolvido por <b>AnamK</b></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Barra de ação fixa (só no mobile; substitui o WhatsApp flutuante) -->
+    <div class="mobile-cta">
+      <a href="#planos" class="btn">Ver os planos e preços</a>
+      <a
+        href="https://wa.me/5527981437020?text=Ol%C3%A1%2C%20Dr.%20Victor!%20Quero%20saber%20mais%20sobre%20a%20consultoria%20online."
+        class="mobile-cta__wa"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar com o Dr. Victor no WhatsApp"
+      >
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path
+            d="M16 .396C7.164.396.001 7.56.001 16.393c0 2.885.755 5.7 2.19 8.185L0 32l7.616-2.13a15.9 15.9 0 0 0 8.377 2.243h.007C24.83 32.113 32 24.95 32 16.117 32 11.86 30.35 7.86 27.3 4.82 24.26 1.78 20.26.13 16 .396zm0 29.13h-.006a13.2 13.2 0 0 1-6.72-1.84l-.48-.286-4.52 1.265 1.207-4.41-.313-.454a13.16 13.16 0 0 1-2.02-7.02c0-7.29 5.93-13.22 13.23-13.22 3.53 0 6.85 1.38 9.35 3.88a13.13 13.13 0 0 1 3.87 9.35c-.003 7.29-5.93 13.22-13.22 13.22zm7.25-9.9c-.397-.2-2.35-1.16-2.714-1.29-.364-.133-.63-.2-.895.2-.264.396-1.026 1.29-1.258 1.556-.232.265-.463.298-.86.1-.397-.2-1.676-.618-3.193-1.97-1.18-1.052-1.977-2.35-2.21-2.747-.23-.397-.024-.612.174-.81.18-.178.397-.463.596-.695.2-.232.264-.397.397-.662.132-.265.066-.497-.033-.695-.1-.198-.895-2.157-1.226-2.952-.322-.775-.65-.67-.895-.683l-.762-.013c-.264 0-.694.1-1.058.497-.364.397-1.39 1.36-1.39 3.318 0 1.958 1.424 3.85 1.622 4.116.198.265 2.8 4.276 6.784 5.996.948.41 1.688.653 2.265.836.952.302 1.818.26 2.503.157.763-.114 2.35-.96 2.682-1.887.33-.926.33-1.72.23-1.886-.098-.166-.362-.265-.76-.463z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Floating WhatsApp -->
+    <a
+      href="https://wa.me/5527981437020?text=Ol%C3%A1%2C%20Dr.%20Victor!%20Quero%20saber%20mais%20sobre%20a%20consultoria%20online."
+      class="wa-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Falar com o Dr. Victor no WhatsApp"
+    >
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path
+          d="M16 .396C7.164.396.001 7.56.001 16.393c0 2.885.755 5.7 2.19 8.185L0 32l7.616-2.13a15.9 15.9 0 0 0 8.377 2.243h.007C24.83 32.113 32 24.95 32 16.117 32 11.86 30.35 7.86 27.3 4.82 24.26 1.78 20.26.13 16 .396zm0 29.13h-.006a13.2 13.2 0 0 1-6.72-1.84l-.48-.286-4.52 1.265 1.207-4.41-.313-.454a13.16 13.16 0 0 1-2.02-7.02c0-7.29 5.93-13.22 13.23-13.22 3.53 0 6.85 1.38 9.35 3.88a13.13 13.13 0 0 1 3.87 9.35c-.003 7.29-5.93 13.22-13.22 13.22zm7.25-9.9c-.397-.2-2.35-1.16-2.714-1.29-.364-.133-.63-.2-.895.2-.264.396-1.026 1.29-1.258 1.556-.232.265-.463.298-.86.1-.397-.2-1.676-.618-3.193-1.97-1.18-1.052-1.977-2.35-2.21-2.747-.23-.397-.024-.612.174-.81.18-.178.397-.463.596-.695.2-.232.264-.397.397-.662.132-.265.066-.497-.033-.695-.1-.198-.895-2.157-1.226-2.952-.322-.775-.65-.67-.895-.683l-.762-.013c-.264 0-.694.1-1.058.497-.364.397-1.39 1.36-1.39 3.318 0 1.958 1.424 3.85 1.622 4.116.198.265 2.8 4.276 6.784 5.996.948.41 1.688.653 2.265.836.952.302 1.818.26 2.503.157.763-.114 2.35-.96 2.682-1.887.33-.926.33-1.72.23-1.886-.098-.166-.362-.265-.76-.463z"
+        />
+      </svg>
+    </a>
+
+    <script src="/assets/js/main.js?v=33" defer></script>
+    <script type="module" src="/assets/js/app.js?v=33"></script>
+  </body>
+</html>
